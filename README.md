@@ -1456,7 +1456,7 @@
     };
     ```
 
-  - [19.2](#19.2) <a name='19.2'></a> Additional trailing comma: **Yup.**
+  - [19.2](#19.2) <a name='19.2'></a> Additional trailing comma in arrays or objects that span multiple lines. But not single line: **Yup.**
 
   > Why? This leads to cleaner git diffs. Also, transpilers like Babel will remove the additional trailing comma in the transpiled code which means you don't have to worry about the [trailing comma problem](es5/README.md#commas) in legacy browsers.
 
@@ -1497,6 +1497,13 @@
       'Batman',
       'Superman',
     ];
+
+    // bad
+    const heroes = ['Batman', 'Superman',];
+
+    // good
+    const heroes = ['Batman', 'Superman'];
+
     ```
 
 **[⬆ back to top](#table-of-contents)**
