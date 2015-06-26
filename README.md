@@ -1,10 +1,10 @@
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-# Airbnb JavaScript Style Guide() {
+# Dohop style guide for Front-End developers
+Please try to follow these rules set below. Also don't forget to be awesome !
+# For CSS rules please check out [B_E_M](https://css-tricks.com/bem-101/) until we put up our own style guide
+# Dohop JavaScript Style Guide() Based on Airbnb {
 
 *A mostly reasonable approach to JavaScript*
-
-[For the ES5-only guide click here](es5/).
 
 ## Table of Contents
 
@@ -403,7 +403,7 @@
     const name = 'Capt. Janeway';
     ```
 
-  - [6.2](#6.2) <a name='6.2'></a> Strings longer than 80 characters should be written across multiple lines using string concatenation.
+  - [6.2](#6.2) <a name='6.2'></a> Strings longer than 100 characters should be written across multiple lines using string concatenation.
   - [6.3](#6.3) <a name='6.3'></a> Note: If overused, long strings with concatenation could impact performance. [jsPerf](http://jsperf.com/ya-string-concat) & [Discussion](https://github.com/airbnb/javascript/issues/40).
 
     ```javascript
