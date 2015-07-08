@@ -1,8 +1,8 @@
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 # Dohop style guide for Front-End developers
-Please try to follow these rules set below. Also don't forget to be awesome !
-# For CSS rules please check out [B_E_M](https://css-tricks.com/bem-101/) until we put up our own style guide
-# Dohop JavaScript Style Guide() Based on Airbnb {
+Please try to follow these rules set below. Also DFTBA !
+# For CSS rules please check out [B_E_M](https://css-tricks.com/bem-101/)
+# Dohop JavaScript Style Guide() Based on Airbnb
 
 *A mostly reasonable approach to JavaScript*
 
@@ -428,7 +428,7 @@ Please try to follow these rules set below. Also don't forget to be awesome !
   > Why? Template strings give you a readable, concise syntax with proper newlines and string interpolation features.
 
     ```javascript
-    // bad
+    // Not best practice but OK
     function sayHi(name) {
       return 'How are you, ' + name + '?';
     }
@@ -476,7 +476,7 @@ Please try to follow these rules set below. Also don't forget to be awesome !
   - [7.4](#7.4) <a name='7.4'></a> **Note:** ECMA-262 defines a `block` as a list of statements. A function declaration is not a statement. [Read ECMA-262's note on this issue](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97).
 
     ```javascript
-    // bad
+    // bad, will cause warning in the linter
     if (currentUser) {
       function test() {
         console.log('Nope.');
@@ -811,7 +811,7 @@ Please try to follow these rules set below. Also don't forget to be awesome !
     ```javascript
     const luke = {
       jedi: true,
-      age: 28,
+      age: 28
     };
 
     // bad
@@ -826,7 +826,7 @@ Please try to follow these rules set below. Also don't forget to be awesome !
     ```javascript
     const luke = {
       jedi: true,
-      age: 28,
+      age: 28
     };
 
     function getProp(prop) {
@@ -1452,7 +1452,7 @@ Please try to follow these rules set below. Also don't forget to be awesome !
       firstName: 'Ada',
       lastName: 'Lovelace',
       birthYear: 1815,
-      superPower: 'computers',
+      superPower: 'computers'
     };
     ```
 
